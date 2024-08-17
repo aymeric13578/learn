@@ -1,0 +1,9 @@
+
+o
+java:S6204="RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8²×º²•2
+o
+java:S6204C"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8³×º²•2
+[
+java:S1155G">Use isEmpty() to check whether the collection is empty or not.(Ññªý8´×º²•2
+`
+java:S1155H">Use isEmpty() to check whether the collection is empty or not.(ô°•¤ùÿÿÿÿ8µ×º²•2

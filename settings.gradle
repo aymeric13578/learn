@@ -1,0 +1,6 @@
+include ':api'
+include ':util'
+include ':course-microservices:course-service'
+include ':course-microservices:review-service'
+include ':course-microservices:recommendation-service'
+include ':course-microservices:course-composite-service'

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/course-microservices" />
+            <option value="$PROJECT_DIR$/course-microservices/course-composite-service" />
+            <option value="$PROJECT_DIR$/course-microservices/course-service" />
+            <option value="$PROJECT_DIR$/course-microservices/recommendation-service" />
+            <option value="$PROJECT_DIR$/course-microservices/review-service" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

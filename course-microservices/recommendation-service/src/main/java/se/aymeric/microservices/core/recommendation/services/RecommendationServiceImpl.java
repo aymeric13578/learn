@@ -1,0 +1,48 @@
+package se.aymeric.microservices.core.recommendation.services;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+import se.aymeric.api.core.recommendation.Recommendation;
+import se.aymeric.api.core.recommendation.RecommendationService;
+import se.aymeric.util.http.ServiceUtil;
+
+@RestController
+public class RecommendationServiceImpl implements RecommendationService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(RecommendationServiceImpl.class);
+
+    private final ServiceUtil serviceUtil;
+
+    @Autowired
+    public RecommendationServiceImpl(ServiceUtil serviceUtil) {
+        this.serviceUtil = serviceUtil;
+    }
+
+    @Override
+    public List<Recommendation> getRecommendations(int courseId) {
+
+        if (courseId < 1) {
+            throw new se.aymeric.api.exceptions.InvalidInputException("Invalid courseId: " + courseId);
+        }
+
+        if (courseId == 113) {
+            LOG.debug("No recommendations found for courseId: {}", courseId);
+            return new ArrayList<>();
+        }
+
+        List<Recommendation> list = new ArrayList<>();
+        list.add(new Recommendation(courseId, 1, "Author 1", 1, "Content 1", serviceUtil.getServiceAddress()));
+        list.add(new Recommendation(courseId, 2, "Author 2", 2, "Content 2", serviceUtil.getServiceAddress()));
+        list.add(new Recommendation(courseId, 3, "Author 3", 3, "Content 3", serviceUtil.getServiceAddress()));
+
+        LOG.debug("/recommendation response size: {}", list.size());
+
+        return list;
+    }
+}
+
+
