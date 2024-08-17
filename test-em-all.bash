@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Sample usage: ss
+# Sample usage:
 #
 #   HOST=localhost PORT=7000 ./test-em-all.bash
 #
