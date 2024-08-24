@@ -1,4 +1,4 @@
-package se.aymeric.api.exceptions;
+package se.aymeric.api.exception;
 
 public class InvalidInputException extends RuntimeException {
     public InvalidInputException() {}

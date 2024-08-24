@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/*Aggregates data from Course-Service, Content-Service, Enrollment-Service, Review-Service, and Recommendation-Service.
+ */
 public class CourseAggregate {
     private  int courseId;
     private final String title;

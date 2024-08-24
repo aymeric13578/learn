@@ -1,4 +1,4 @@
-package se.aymeric.api.exceptions;
+package se.aymeric.api.exception;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException() {}

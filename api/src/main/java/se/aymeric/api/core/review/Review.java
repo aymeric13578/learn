@@ -3,6 +3,8 @@ package se.aymeric.api.core.review;
 public class Review {
     private final int courseId;
     private final int reviewId;
+
+    private int userId; // Foreign Key to User
     private final String author;
     private final String subject;
     private final String content;

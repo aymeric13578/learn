@@ -4,6 +4,16 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class Course {
+    /*private int courseId;
+    private String title;
+    private String description;
+    private double price;
+    private User instructor; // Many-to-One relationship with User
+    private List<Module> modules;
+    private List<Enrollment> enrollments;
+    private List<Review> reviews;
+    private List<Recommendation> recommendations;
+    private List<Payment> payments;*/
     private final int courseId;
     private final String serviceAddress;
 

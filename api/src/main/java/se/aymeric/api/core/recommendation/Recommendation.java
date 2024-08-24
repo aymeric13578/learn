@@ -3,6 +3,8 @@ package se.aymeric.api.core.recommendation;
 public class Recommendation {
     private final int courseId;
     private final int recommendationId;
+
+    private int userId; // Foreign Key to User
     private final String author;
     private final int rate;
     private final String content;

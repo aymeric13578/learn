@@ -114,7 +114,7 @@ assertEqual 3 $(echo $RESPONSE | jq ".reviews | length")
 
 # Verify that no reviews are returned for courseId $PROD_ID_NO_REVS
 assertCurl 200 "curl http://$HOST:$PORT/course-composite/$PROD_ID_NO_REVS -s"
-assertEqual $PROD_ID_NO_REVS $(echo $RESPONSE | jq .productId)
+assertEqual $PROD_ID_NO_REVS $(echo $RESPONSE | jq .courseId)
 assertEqual 3 $(echo $RESPONSE | jq ".recommendations | length")
 assertEqual 0 $(echo $RESPONSE | jq ".reviews | length")
 
